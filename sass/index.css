@@ -169,7 +169,8 @@ a {
 
 @media screen and (max-width: 1279px) {
   .footer {
-    height: 100vh;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .footer__section {
     padding-top: 150px;
