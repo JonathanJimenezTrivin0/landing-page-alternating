@@ -1,0 +1,35 @@
+.conversations {
+  @extend .cards;
+  padding-top: 40px;
+  &__card {
+    @extend .cards__together;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  &__section {
+    @extend .cards__section;
+  }
+  &__title {
+    @extend .cards__title;
+  }
+  &__description {
+    @extend .cards__description;
+  }
+}
+
+.card__img-conversations {
+  @extend .card__img;
+  width: 420px;
+  margin-left: 118px;
+}
+
+@media screen and (max-width: 1279px) {
+  .conversations {
+    &__card {
+      flex-direction: column-reverse;
+    }
+  }
+  .card__img-conversations {
+    margin: auto;
+  }
+}

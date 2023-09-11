@@ -1,0 +1,107 @@
+.navbar {
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__btn {
+    width: 200px;
+    height: 48px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-family: $font-family-Open;
+    border: none;
+    background-color: $white;
+    transition: background-color 400ms $cubic, color 400ms $cubic;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    &:focus,
+    &:hover {
+      color: $Grayish-Blue;
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (max-width: 1279px) {
+  .navbar {
+    padding-top: 30px;
+    &__btn {
+      width: 120px;
+    }
+    &__logo {
+      width: 120px;
+    }
+  }
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  &__article {
+    margin-top: 100px;
+  }
+  &__title {
+    width: 438px;
+    font-size: 37px;
+    margin-bottom: 48px;
+    color: $Very-Dark-Cyan;
+    font-family: $font-family-Poppins;
+    text-transform: capitalize;
+  }
+  &__description {
+    width: 510px;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 36px;
+    font-weight: 400;
+    font-family: $font-family-Open;
+    color: $Very-Dark-Cyan;
+  }
+  &__btn {
+    @extend .navbar__btn;
+    width: 280px;
+    background-color: $Pink;
+    color: $white;
+    &:focus,
+    &:hover {
+      background-color: $Pink-alfa;
+      color: $white;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__article {
+      margin-top: 0px;
+    }
+    &__title {
+      width: auto;
+      font-size: 25px;
+    }
+    &__description {
+      width: auto;
+      font-size: 17px;
+    }
+  }
+}
+
+.hero__img {
+  .hero__img-desing {
+    width: 680px;
+    height: 480px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .hero__img {
+    .hero__img-desing {
+      padding-top: 60px;
+      height: auto;
+    }
+  }
+}

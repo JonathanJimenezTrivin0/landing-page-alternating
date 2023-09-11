@@ -1,0 +1,20 @@
+.user {
+  @extend .cards;
+  padding-top: 40px;
+  &__card {
+    @extend .cards__together;
+  }
+  &__section {
+    @extend .cards__section;
+  }
+  &__title {
+    @extend .cards__title;
+  }
+  &__description {
+    @extend .cards__description;
+  }
+}
+
+.card__img-user {
+  @extend .card__img;
+}

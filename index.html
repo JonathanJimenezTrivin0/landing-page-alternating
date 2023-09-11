@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with alternating feature blocks
+    </title>
+  </head>
+  <body>
+    <main class="main">
+      <nav class="navbar section">
+        <a class="navbar__logo" href="./index.html">
+          <img src="../images/logo.svg" alt="logo header"
+        /></a>
+        <button class="navbar__btn" type="button">Try It Free</button>
+      </nav>
+      <header class="hero section">
+        <article class="hero__article">
+          <h1 class="hero__title">Build The Community Your Fans Will Love</h1>
+          <p class="hero__description">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button class="hero__btn">Get Started For Free</button>
+        </article>
+
+        <div class="hero__img">
+          <img
+            class="hero__img-desing"
+            src="./images/illustration-mockups.svg"
+            alt="illustration-mockups"
+          />
+        </div>
+      </header>
+      <section class="cards section">
+        <article class="cards__together">
+          <div class="cards__section">
+            <h2 class="cards__title">Grow Together</h2>
+            <p class="cards__description">
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
+          <img
+            class="card__img"
+            src="./images/illustration-grow-together.svg"
+            alt="illustration-grow-together"
+          />
+        </article>
+      </section>
+
+      <section class="conversations section">
+        <article class="conversations__card">
+          <div class="conversations__section">
+            <h2 class="conversations__title">Flowing Conversations</h2>
+            <p class="conversations__description">
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
+            </p>
+          </div>
+          <img
+            class="card__img-conversations"
+            src="./images/illustration-flowing-conversation.svg"
+            alt="illustration-grow-together"
+          />
+        </article>
+      </section>
+      <section class="user section">
+        <article class="user__card">
+          <div class="user__section">
+            <h2 class="user__title">Your Users</h2>
+            <p class="user__description">
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
+          <img
+            class="card__img-user"
+            src="./images/illustration-your-users.svg"
+            alt="illustration-grow-together"
+          />
+        </article>
+      </section>
+      <section class="community">
+        <h2 class="community__title">Ready To Build Your Community?</h2>
+        <button class="community__btn">Get Started For Free</button>
+      </section>
+      <footer class="footer">
+        <section class="footer__section section">
+          <img src="./images/logo - footer.svg" alt="logo footer" />
+          <div class="footer__icon-social">
+            <a class="svg__circle" href="#">
+              <svg class="icon__svg" width="14" height="14">
+                <use href=".//images/icon-social.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a class="svg__circle" href="#">
+              <svg class="icon__svg" width="14" height="14">
+                <use href=".//images/icon-social.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a class="svg__circle" href="#">
+              <svg class="icon__svg" width="14" height="14">
+                <use href=".//images/icon-social.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </div>
+          <address class="address">
+            <div class="address__location">
+              <img src="./images/icon-location.svg" alt="icon-location" />
+              <p class="address__location-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
+            <div class="address__phone">
+              <img src="./images/icon-phone.svg" alt="icon-phone" />
+              <p class="address__phone-number">+1-543-123-4567</p>
+            </div>
+            <div class="address__email">
+              <img src="./images/icon-email.svg" alt="icon-email" />
+              <p class="address__email-mail">example@huddle.com</p>
+            </div>
+            <div class="address__copyright">
+              <p class="address__copyright-text">
+                &copy; Copyright 2018 Huddle. All rights reserved.
+              </p>
+            </div>
+          </address>
+          <section class="aboutUs">
+            <ul class="aboutUs__ul">
+              <a href="#"><li class="aboutUs__list">About Us</li></a>
+              <a href="#"><li class="aboutUs__list">What We Do</li></a>
+              <a href="#"><li class="aboutUs__list">FAQ</li></a>
+            </ul>
+            <ul class="aboutUs__ul aboutUs__ul-position">
+              <a href="#"> <li class="aboutUs__list">Career</li></a>
+              <a href="#"><li class="aboutUs__list">Blog</li></a>
+              <a href="#"> <li class="aboutUs__list">Contact Us</li></a>
+            </ul>
+          </section>
+          <div class="attribution">
+            <p class="attribution">
+              Challenge by
+              <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+              >. Coded by <a href="#">Jonathan Jimenez</a>.
+            </p>
+          </div>
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>

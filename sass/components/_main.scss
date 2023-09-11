@@ -1,0 +1,17 @@
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: $Very-Pale-Cyan;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/bg-hero-desktop.svg);
+}
+
+@media screen and (max-width: 1279px) {
+  .main {
+    max-width: 375px;
+    margin: auto;
+    background-image: url(/images/bg-hero-mobile.svg);
+  }
+}
